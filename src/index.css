@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* .dark-datePicker input::placeholder {
+    color: #fff;
+  } */
+}
+
+.ant-picker-input input::placeholder {
+  /* @apply dark:text-white/[0.4]; */
+}
+
+.custom-select .ant-select-selector {
+  /* @apply dark:border-white/[0.4] dark:bg-transparent dark:text-white; */
+}
+
+.custom-select .ant-select-arrow {
+  /* @apply dark:text-white; */
+}
+
+.dark-input-password-icon .ant-input-password-icon svg {
+  /* @apply dark:fill-white;  */
+}
+
+body {
+  background: #f8f8f8;
+  margin: 0;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Improves legibility for larger fonts */
+  text-rendering: geometricPrecision;
+  /* For precise glyph shapes */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  font-family: "DM Sans";
+}
