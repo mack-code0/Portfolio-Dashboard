@@ -9,6 +9,9 @@ module.exports = {
       colors: {},
       fontFamily: {
         dmSans: 'DM Sans',
+        inter: 'Inter',
+        montserrat: 'Montserrat',
+        roboto: 'Roboto Mono',
       },
     },
   },
