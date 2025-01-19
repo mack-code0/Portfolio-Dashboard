@@ -6,7 +6,15 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        "primaryText": "#FFFFFF",
+        "secondaryText": "#808080",
+        "mutedText": "#666666",
+        "primaryBg": "#1C1C1E",
+        "secondaryBg": "#2C2C2E",
+        "greenBg": "#00FF90",
+        "redBg": "#FF4040",
+      },
       fontFamily: {
         dmSans: 'DM Sans',
         inter: 'Inter',
