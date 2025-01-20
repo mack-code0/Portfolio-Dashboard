@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primaryText": "#FFFFFF",
-        "secondaryText": "#808080",
+        "primText": "#F2F2F2",
+        "secText": "#808080",
         "mutedText": "#666666",
-        "primaryBg": "#1C1C1E",
-        "secondaryBg": "#2C2C2E",
-        "greenBg": "#00FF90",
+        "primBg": "#1C1C1E",
+        "secBg": "#2C2C2E",
+        "greenBg": "#27e291",
         "redBg": "#FF4040",
       },
       fontFamily: {
