@@ -25,7 +25,9 @@ const BaseLayout: React.FC<{ children: React.ReactElement }> = ({ children }) =>
         <Sidebar sidebarOpen={state.sidebarOpen} toggleSidebar={toggleSidebar} />
         <div className="w-full h-[100%] overflow-y-scroll no-scrollbar">
             <Navbar toggleSidebar={toggleSidebar} />
-            {children}
+            <div>
+                {children}
+            </div>
         </div>
     </div>);
 }

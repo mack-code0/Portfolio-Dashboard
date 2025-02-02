@@ -4,8 +4,7 @@ const TableWrapper = styled.div`
     width: 100%;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    max-height: 70vh;
-    overflow: scroll;
+    overflow-x: scroll;
 
     &::-webkit-scrollbar {
         display: none;

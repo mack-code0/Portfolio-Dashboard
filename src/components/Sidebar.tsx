@@ -22,7 +22,7 @@ const Sidebar: React.FC<{ sidebarOpen: boolean, toggleSidebar: () => void }> = (
 
 
     return (<>
-        <div role="button" onClick={toggleSidebar} className={`${!sidebarOpen && "hidden"} xl:hidden fixed h-[screen] w-screen bg-[#000]/[.8] top-0 right-0 z-10`} />
+        <div role="button" onClick={toggleSidebar} className={`${!sidebarOpen && "hidden"} xl:hidden fixed h-screen w-screen bg-[#000]/[.8] top-0 right-0 z-10`} />
         <div className={`${!sidebarOpen && "left-[-300px] xl:left-0"} w-[300px] h-[100%] bg-primBg border-r border-secBg overflow-x-hidden overflow-y-scroll no-scrollbar fixed xl:relative z-10`}>
             <div className="flex items-center p-4 h-[75px] border-b border-secBg">
                 <button className="bg-secBg p-3 rounded mr-3 bg-secBg">
