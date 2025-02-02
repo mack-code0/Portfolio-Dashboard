@@ -21,9 +21,9 @@ const BaseLayout: React.FC<{ children: React.ReactElement }> = ({ children }) =>
 
     const toggleSidebar = () => setState(prev => ({ ...prev, sidebarOpen: !prev.sidebarOpen }))
 
-    return (<div className="flex w-full">
+    return (<div className="flex w-full h-screen">
         <Sidebar sidebarOpen={state.sidebarOpen} toggleSidebar={toggleSidebar} />
-        <div className="w-full h-screen overflow-y-scroll no-scrollbar">
+        <div className="w-full h-[100%] overflow-y-scroll no-scrollbar">
             <Navbar toggleSidebar={toggleSidebar} />
             {children}
         </div>
