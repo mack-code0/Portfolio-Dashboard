@@ -14,24 +14,7 @@ function App() {
         </div>
       }
     >
-        <ThemeProvider
-          theme={
-            {
-              primary: "#B01E1E"
-            }
-          }>
-          <ConfigProvider
-            theme={{
-              token: {
-                colorPrimary: "#B01E1E",
-                colorPrimaryActive: "#B01E1E",
-              },
-            }}
-          >
-            {/* <Testing /> */}
-            <AppRoutes />
-          </ConfigProvider>
-        </ThemeProvider>
+      <AppRoutes />
     </React.Suspense>
   );
 }
