@@ -22,17 +22,10 @@ const BaseLayout: React.FC<{ children: React.ReactElement }> = ({ children }) =>
     const toggleSidebar = () => setState(prev => ({ ...prev, sidebarOpen: !prev.sidebarOpen }))
 
     return (<div className="flex w-full h-screen">
-        {/* Sidebar - Fixed Height, No Scroll */}
         <Sidebar sidebarOpen={state.sidebarOpen} toggleSidebar={toggleSidebar} />
-        
-        {/* Main Content - Scrollable */}
-        <div className="flex-1 flex flex-col h-screen overflow-hidden">
+        <div className="w-full h-[100%] overflow-y-auto no-scrollbar pb-12">
             <Navbar toggleSidebar={toggleSidebar} />
-            
-            {/* Scrollable Content */}
-            <div className="flex-1 overflow-y-auto no-scrollbar">
-                {children}
-            </div>
+            {children}
         </div>
     </div>);
 }
